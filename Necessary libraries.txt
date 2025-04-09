@@ -1,0 +1,9 @@
+Rasa library:
+1. Ensure python and pip version
+python-- version
+pip-- version
+2. Create a virtual environment
+python -m venv myenv
+'myenv\scripts\activate'
+3. Install rasa-sdk:
+pip install rasa-sdk
