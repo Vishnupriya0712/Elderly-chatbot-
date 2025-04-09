@@ -1,0 +1,31 @@
+create table questions(
+ask varchar(255)
+);
+
+alter table questions
+    -> modify ask varchar(255) not null;
+
+alter table questions
+add constraint pk_questions primary key(questions);
+
+alter table questions add primary key (ask);
+
+create table answers(
+answer varchar(255)
+);
+
+create table chatbot(
+ask varchar(255),
+answer varchar(255)
+);
+
+alter table chatbot
+modify answer varchar(255) not null;
+
+insert into chatbot(ask,answer)
+values
+('Hi','Hello! How can i help you'),
+('What is your name ?',' My name is Chitti!'),
+('Tell me some joke','Sure here is a programming joke for you: Why do programmers prefer dark mode? Because light attracts bugs!' );
+
+select 
